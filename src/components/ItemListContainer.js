@@ -1,10 +1,9 @@
-import Title from './Title'
-
-export const ItemlistContainer = (props) =>{
-    console.log(props)
+export const ItemlistContainer = ({greeting}) =>{
+    
     return(
-        <Title greeting={props.texto} />
+        <h1>{greeting}</h1>
     );
 }
 
-export default ItemlistContainer
+
+export default ItemlistContainer;
