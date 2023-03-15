@@ -7,7 +7,7 @@ function NavBar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          NAGUANA
+          TECSTORE
         </a>
         <button
           className="navbar-toggler"
@@ -29,7 +29,7 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Sabores
+                Accesorios
               </a>
             </li>
             <li className="nav-item">
