@@ -1,3 +1,5 @@
+
+
 const products = [
     {
         id: 1,
@@ -11,7 +13,7 @@ const products = [
         id: 2,
         title: "Macbook Pro ",
         description: "electrónico",
-        price: 3000,
+        price: 1000,
         img:
           "https://tse2.mm.bing.net/th?id=OIP.xd0qz8N6ki-zXM7i3cf2WgHaF3&pid=Api&P=0",
       },
