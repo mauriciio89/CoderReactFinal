@@ -3,6 +3,7 @@
 const products = [
     {
         id: 1,
+        categoryId: "televisores",
         title: "Televisor",
         description: "electrónico",
         price: 1000,
@@ -11,6 +12,7 @@ const products = [
       },
       {
         id: 2,
+        categoryId: "laptops",
         title: "Macbook Pro ",
         description: "electrónico",
         price: 1000,
@@ -19,11 +21,12 @@ const products = [
       },
       {
         id: 3,
+        categoryId: "consolas",
         title: "Play Station 5",
         description: "electrónico",
         price: 500,
         img:
-          "https://tse2.mm.bing.net/th?id=OIP.xd0qz8N6ki-zXM7i3cf2WgHaF3&pid=Api&P=0"
+          "https://www.inside-digital.de/img/sony-playstation-5-black-1.jpg"
       },
     ]
 

@@ -14,6 +14,7 @@ console.log(categoriaId)
     getDatos()
     .then((response) => setListaProductos(response))
     .catch((err) => console.error(err))
+   
   }, [])
 
   console.log(listaProductos)
