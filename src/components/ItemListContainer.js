@@ -1,9 +1,12 @@
 import React, { useEffect, useState} from 'react';
 import ItemList from './ItemList';
 import getDatos from './getProducts';
+import { useParams } from 'react-router-dom';
 
 
 const ItemListContainer = () => {
+const {categoriaId} = useParams()
+console.log(categoriaId)
 
   const [listaProductos, setListaProductos] = useState([]);
 
