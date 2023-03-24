@@ -34,8 +34,18 @@ const products = [
         return new Promise((resolve, reject) =>  {
           setTimeout(() => {
             resolve(products);
-          }, 2000);
+          }, 1000);
         })
       }
+
+      export const getProductsByCategory = (category) => {
+        return new Promise((res) => {
+          const productos = products.filter(product => product.categoryId === category);
+          setTimeout(() => {
+              res(productos);
+          }, 2000);
+      });
+    }
+    
 
     export default getDatos;

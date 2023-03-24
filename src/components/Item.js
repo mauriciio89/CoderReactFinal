@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Item = ({product}) => {
   return (
     <div className="col-lg-4 mb-5">

@@ -11,11 +11,20 @@ console.log(categoriaId)
   const [listaProductos, setListaProductos] = useState([]);
 
   useEffect(() => {
+    console.log();
     getDatos()
-    .then((response) => setListaProductos(response))
+    .then((response) => {
+      if(categoriaId){
+        console.log();
+        const getProductsByCategory = response.filter(producto => producto.categoriaId === categoriaId)
+        setListaProductos(getProductsByCategory)
+      }else{
+        setListaProductos(response)
+      }
+    }) 
     .catch((err) => console.error(err))
    
-  }, [])
+  }, [categoriaId])
 
   console.log(listaProductos)
   return (
