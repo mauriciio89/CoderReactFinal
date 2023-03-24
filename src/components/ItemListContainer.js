@@ -16,7 +16,7 @@ console.log(categoriaId)
     .then((response) => {
       if(categoriaId){
         console.log();
-        const getProductsByCategory = response.filter(producto => producto.categoriaId === categoriaId)
+        const getProductsByCategory = response.filter(producto => producto.categoryId === categoriaId)
         setListaProductos(getProductsByCategory)
       }else{
         setListaProductos(response)

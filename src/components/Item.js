@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from 'react-router-dom'
 
 const Item = ({product}) => {
   return (
@@ -14,10 +14,11 @@ const Item = ({product}) => {
       <p className="text-muted">{product.title}</p>
       <p>{product.description}</p>
       <p>$ {product.price}</p>
-      <button className="button">View details</button>
+      <Link className="btn btn-dark" to={`/detalle/${product.id}`}>View details</Link>
     </div>
   );
 };
 
 
-export default Item;
+export default Item;
+
