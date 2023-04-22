@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import {Link} from 'react-router-dom'
+import { CartContext } from "../CartContext"
+
 
 const Item = ({product}) => {
+  const nombre = useContext(CartContext);
+  console.log('Item', nombre)
   return (
     <div className="col-lg-4 mb-5">
       <div className="text-center card-box"></div>
